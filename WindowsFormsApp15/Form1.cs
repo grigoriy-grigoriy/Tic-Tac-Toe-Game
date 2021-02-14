@@ -185,6 +185,35 @@ namespace WindowsFormsApp15
 
             return ex;
         }
+        private void cpuWork()
+        {
+            Button but;
+
+            do
+            {
+                but = (Button)gamePolePanel.Controls[r.Next(0, gamePolePanel.Controls.Count)];
+            } while (!finich && (but.Text.Length > 0));
+            setButtonValue(but);
+            checkFinal();
+        }
+
+        /// <summary>
+        /// Очищаем игровое поле 
+        /// </summary>
+        private void clearGameFieldUniversal()
+        {
+            Button but;
+            foreach (object elem in gamePolePanel.Controls)
+            {
+                if (elem is Button)
+                {
+
+                    but = (Button)elem;
+                    but.Text = "";
+                    but.ForeColor = Color.Black;
+                }
+            }
+        }
 
 
     }
