@@ -149,6 +149,60 @@ namespace WindowsFormsApp15
             this.Pole_10.UseVisualStyleBackColor = true;
             // ----------------------------------------------------------------
 
+            this.Pole_00.Location = new System.Drawing.Point(12, 9);
+            this.Pole_00.Name = "Pole_00";
+            this.Pole_00.Size = new System.Drawing.Size(55, 55);
+            this.Pole_00.TabIndex = 9;
+            this.Pole_00.UseVisualStyleBackColor = true;
+            // -----------------------------------------------------------------
+
+            this.startVsPlayer.Location = new System.Drawing.Point(298, 272);
+            this.startVsPlayer.Name = "startVsPlayer";
+            this.startVsPlayer.Size = new System.Drawing.Size(195, 37);
+            this.startVsPlayer.TabIndex = 1;
+            this.startVsPlayer.Text = "Игра (на двух игроков)";
+            this.startVsPlayer.UseVisualStyleBackColor = true;
+            this.startVsPlayer.Click += new System.EventHandler(this.startVsPlayer_Click);
+            // ----------------------------------------------------------------
+
+            this.start_comp.Location = new System.Drawing.Point(28, 272);
+            this.start_comp.Name = "startVsCpu";
+            this.start_comp.Size = new System.Drawing.Size(195, 37);
+            this.start_comp.TabIndex = 2;
+            this.start_comp.Text = "игра с компьютером";
+            this.start_comp.UseVisualStyleBackColor = true;
+            this.start_comp.Click += new System.EventHandler(this.startVsCpu_Click);
+            // -----------------------------------------------------------------
+
+            this.x_Rezultat_Label.ForeColor = System.Drawing.Color.Red;
+            this.x_Rezultat_Label.Location = new System.Drawing.Point(220, 117);
+            this.x_Rezultat_Label.Name = "xRexultLabel";
+            this.x_Rezultat_Label.Size = new System.Drawing.Size(150, 46);
+            this.x_Rezultat_Label.TabIndex = 3;
+
+            this.x_Rezultat_Label.Text = "X --------> Счет";
+            this.x_Rezultat_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ------------------------------------------------------------------
+
+            this.o_Rezultat_Label.ForeColor = System.Drawing.Color.Green;
+            this.o_Rezultat_Label.Location = new System.Drawing.Point(220, 163);
+            this.o_Rezultat_Label.Name = "o_Rezultat_Label";
+            this.o_Rezultat_Label.Size = new System.Drawing.Size(150, 46);
+            this.o_Rezultat_Label.TabIndex = 4;
+            this.o_Rezultat_Label.Text = "O --------> Счет";
+            this.o_Rezultat_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // --------------------------------------------------------------------
+
+            this.x_Rezultat.ForeColor = System.Drawing.Color.Black;
+            this.x_Rezultat.Location = new System.Drawing.Point(360, 117);
+            this.x_Rezultat.Name = "x_Rezultat_Label";
+            this.x_Rezultat.Size = new System.Drawing.Size(350, 46);
+            this.x_Rezultat.TabIndex = 5;
+            this.x_Rezultat.Text = "0";
+            this.x_Rezultat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ------------------------------------------------------------------------
+
+
 
         }
     }
