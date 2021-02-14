@@ -90,6 +90,64 @@ namespace WindowsFormsApp15
 
             box.Text = "           Вас приветствует игра крестики нолики. Сюда можете записывать результаты";
 
+            //add 
+            this.Controls.Add(box);
+
+            this.Pole_22.Location = new System.Drawing.Point(134, 131);
+            this.Pole_22.Name = "Pole_22";
+            this.Pole_22.Size = new System.Drawing.Size(55, 55);
+            this.Pole_22.TabIndex = 17;
+            this.Pole_22.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_12.Location = new System.Drawing.Point(73, 131);
+            this.Pole_12.Name = "Pole_12";
+            this.Pole_12.Size = new System.Drawing.Size(55, 55);
+            this.Pole_12.TabIndex = 16;
+            this.Pole_12.UseVisualStyleBackColor = true;
+            // --------------------------------------------------------------
+
+            this.Pole_02.Location = new System.Drawing.Point(12, 131);
+            this.Pole_02.Name = "Pole_02";
+            this.Pole_02.Size = new System.Drawing.Size(55, 55);
+            this.Pole_02.TabIndex = 15;
+            this.Pole_02.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_21.Location = new System.Drawing.Point(134, 70);
+            this.Pole_21.Name = "Pole_21";
+            this.Pole_21.Size = new System.Drawing.Size(55, 55);
+            this.Pole_21.TabIndex = 14;
+            this.Pole_21.UseVisualStyleBackColor = true;
+            // ---------------------------------------------------------------
+
+            this.Pole_11.Location = new System.Drawing.Point(73, 70);
+            this.Pole_11.Name = "Pole_11";
+            this.Pole_11.Size = new System.Drawing.Size(55, 55);
+            this.Pole_11.TabIndex = 13;
+            this.Pole_11.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
+
+            this.Pole_01.Location = new System.Drawing.Point(12, 70);
+            this.Pole_01.Name = "Pole_01";
+            this.Pole_01.Size = new System.Drawing.Size(55, 55);
+            this.Pole_01.TabIndex = 12;
+            this.Pole_01.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------------
+
+            this.Pole_20.Location = new System.Drawing.Point(134, 9);
+            this.Pole_20.Name = "Pole_20";
+            this.Pole_20.Size = new System.Drawing.Size(55, 55);
+            this.Pole_20.TabIndex = 11;
+            this.Pole_20.UseVisualStyleBackColor = true;
+            // --------------------------------------------------------------------------
+
+            this.Pole_10.Location = new System.Drawing.Point(73, 9);
+            this.Pole_10.Name = "Pole_10";
+            this.Pole_10.Size = new System.Drawing.Size(55, 55);
+            this.Pole_10.TabIndex = 10;
+            this.Pole_10.UseVisualStyleBackColor = true;
+            // ----------------------------------------------------------------
 
 
         }
