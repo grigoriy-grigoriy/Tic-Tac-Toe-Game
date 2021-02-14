@@ -68,6 +68,43 @@ namespace WindowsFormsApp15
         }
 
 
+        private void startVsCpu_Click(object sender, EventArgs e)
+        {
+            clearGameField();
+            Comp1 = true;
+            finich = false;
+            start = false;
+        }
+
+        private void clearGameField()
+        {
+            foreach (Button but in gamePolePanel.Controls)
+            {
+                but.Text = "";
+                but.ForeColor = Color.Black;
+            }
+        }
+
+        /// <param name="but"> для обработки</param>
+        private void setButtonValue(Button but)
+        {
+            if (but.Text.Length > 0)
+                MessageBox.Show("Сюда нельзя! :)");
+            else
+            {
+                if (start)
+                {
+                    but.Text = "X";
+                    but.ForeColor = Color.Blue;
+                }
+                else
+                {
+                    but.Text = "0";
+                    but.ForeColor = Color.Red;
+                }
+                start = !start;
+            }
+        }
 
 
     }
