@@ -106,6 +106,54 @@ namespace WindowsFormsApp15
             }
         }
 
+        /// <summary>
+        /// Проверка завершения игры 
+        /// </summary>
+        private void checkFinal()
+        {
+            string[][] winResults = new string[][]
+            {
+                new string[] {"00", "01", "02"},
+                new string[] {"10", "11", "12"},
+                new string[] {"20", "21", "22"},
+                new string[] {"00", "10", "20"},
+                new string[] {"01", "11", "21"},
+                new string[] {"02", "12", "22"},
+                new string[] {"00", "11", "22"},
+                new string[] {"02", "11", "20"}
+            };
+            List<string> xValues = new List<string>();
+            List<string> OValues = new List<string>();
+
+            foreach (Button but in gamePolePanel.Controls)
+            {
+                if (but.Text == "X")
+                    xValues.Add(but.Name.Replace("Pole_", ""));
+                else if (but.Text == "0")
+                    OValues.Add(but.Name.Replace("Pole_", ""));
+            }
+            if (checkWin(winResults, xValues))
+            {
+                finich = true;
+                MessageBox.Show("Победил тот кто играл крестиками!");
+                x_Rezultat_Val++;
+                updateVinResults();
+            }
+
+            else if (checkWin(winResults, OValues))
+            {
+                finich = true;
+                MessageBox.Show("Победил тот кто играл ноликами!");
+                o_Rezultat_Val++;
+                updateVinResults();
+            }
+            else if (OValues.Count + xValues.Count == 9)
+            {
+                finich = true;
+                MessageBox.Show("Ничья! попробуем еще");
+            }
+        }
+
 
     }
 }
