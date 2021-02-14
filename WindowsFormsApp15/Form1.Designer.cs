@@ -202,9 +202,67 @@ namespace WindowsFormsApp15
             this.x_Rezultat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // ------------------------------------------------------------------------
 
+            this.o_Rezultat.ForeColor = System.Drawing.Color.Black;
+            this.o_Rezultat.Location = new System.Drawing.Point(360, 163);
+            this.o_Rezultat.Name = "oResult";
+            this.o_Rezultat.Size = new System.Drawing.Size(350, 46);
+            this.o_Rezultat.TabIndex = 6;
+            this.o_Rezultat.Text = "0";
+            this.o_Rezultat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // ----------------------------------------------------------
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(621, 417);
+            this.Controls.Add(this.o_Rezultat);
+            this.Controls.Add(this.x_Rezultat);
+            this.Controls.Add(this.o_Rezultat_Label);
+            this.Controls.Add(this.x_Rezultat_Label);
+            this.Controls.Add(this.start_comp);
+            this.Controls.Add(this.startVsPlayer);
+            this.Controls.Add(this.gamePolePanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "---------------игра крестики-нолики-------------";
+            this.gamePolePanel.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 
+            box.RightToLeft = RightToLeft.Yes;
+            box.KeyDown += Box_KeyDown;
         }
+
+        #endregion
+
+
+        private System.Windows.Forms.Panel gamePolePanel;
+        private System.Windows.Forms.Button Pole_22;
+        private System.Windows.Forms.Button Pole_12;
+        private System.Windows.Forms.Button Pole_02;
+        private System.Windows.Forms.Button Pole_21;
+        private System.Windows.Forms.Button Pole_11;
+        private System.Windows.Forms.Button Pole_01;
+        private System.Windows.Forms.Button Pole_20;
+        private System.Windows.Forms.Button Pole_10;
+        private System.Windows.Forms.Button Pole_00;
+        private System.Windows.Forms.Button startVsPlayer;
+        private System.Windows.Forms.Button start_comp;
+        private System.Windows.Forms.Label x_Rezultat_Label;
+        private System.Windows.Forms.Label o_Rezultat_Label;
+        private System.Windows.Forms.Label x_Rezultat;
+        private System.Windows.Forms.Label o_Rezultat;
+
+        private void Box_KeyDown(object sender, KeyEventArgs e)
+        {
+            this.Text = e.KeyCode.ToString();
+        }
+        TextBox box;
+        TextBox text;
+
+
+
+
     }
 
 }
